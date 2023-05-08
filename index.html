@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Project Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+            background-size: 56.57px 56.57px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.12);
+        }
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .profile-card {
+            flex: 0 0 calc(50% - 20px);
+            margin: 10px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.12);
+        }
+        .profile-card h3 {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, GitHub Pages!</h1>
-    <p>Welcome to my GitHub Pages site.</p>
+    <div class="container">
+        <h1>Project Title</h1>
+        <p>Project description...</p>
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://github.com/username/repository-name/blob/main/presentation.pptx">PowerPoint Presentation</a></li>
+            <li><a href="https://github.com/username/repository-name/blob/main/documentation.pdf">PDF Documentation</a></li>
+            <li><a href="https://github.com/username/repository-name">Source Code and Tests</a></li>
+            <li><a href="getting-started-users.html">Getting Started for Users</a></li>
+            <li><a href="getting-started-developers.html">Getting Started for Developers</a></li>
+        </ul>
+        <h2>Team Members</h2>
+        <div class="profile">
+            <!-- Repeat the following 'profile-card' for each team member -->
+            <div class="profile-card">
+                <h3>Name</h3>
+                <p>Bio...</p>
+                <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+                <p><a href="https://www.linkedin.com/in/linkedin-profile">LinkedIn</a></p>
+            </div>
+        </div
+        <h2>Supervisors</h2>
+        <div class="profile">
+            <!-- Repeat the following 'profile-card' for each supervisor -->
+            <div class="profile-card">
+                <h3>Name</h3>
+                <p>Bio...</p>
+                <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+                <p><a href="https://www.linkedin.com/in/linkedin-profile">LinkedIn</a></p>
+            </div>
+        </div>
+        <h2>Project Presentation Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
