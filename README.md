@@ -4,10 +4,11 @@ To see an overview of our project, see our GitHub Pages site [here](https://tora
 # Repo Structure
 The repository is split into 4 directories:
 
-- [Data](Data) | The raw data we were given by sefaria, the cleaned data we produced, and the cleaning script we used to produce it
-- [Demo](Demo) | Python scripts and notebooks to run to utilize the models we built for inference
-- [Models](Models) | Where we have our saved models, as well as scripts to recreate these models
-- [Results](Results) | Summaries (as classification reports) of our findings
+- [Data](#data) | The raw data we were given by sefaria, the cleaned data we produced, and the cleaning script we used to produce it
+- [Demo](#demos) | Python scripts and notebooks to run to utilize the models we built for inference
+- [Models](#models) | Where we have our saved models, as well as scripts to recreate these models
+- [Results](#results) | Summaries (as classification reports) of our findings
+- [Utils](#utils) | Some utility helpers
 
 # Getting Started Guide
 
@@ -56,6 +57,14 @@ We include the training scripts used for training both LogisticRegression and Tr
 - The script for generating LogisticRegression models creates models for all 5 top topics, and is found [here](Models/Model%20Generation%20Scripts/Train_and_save_logistic_regression_models_for_all_topics.ipynb)
 - The script for generating Transformer models creates 3 models for a single topic, using 3 different pre-trained BERT models. The script can be found [here](Models/Model%20Generation%20Scripts/Train_and_save_transformer_models_for_single_topic.ipynb)
 
+## Results
+Here we report the results of our LogisticRegression and Transformer models. The results are in the form of [sklearn classification reports](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html), and include columns for:
+- overall accuracy
+- precision/recall for the labels 0 and 1, i.e. not a member of the topic and member of the topic respectively.
+
+## Utils
+### Sefaria Slug-ID Mapping
+Since the labeled training data was from [Aspaklaria](https://www.aspaklaria.info/), and the target of the project is ultimately for use in [Sefaria](https://www.sefaria.org), we provide a mapping from the Aspaklaria topics used in the code to the associated Sefaria slug-ID's 
 # Room for Improvement
 
 
