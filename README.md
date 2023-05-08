@@ -1,100 +1,24 @@
-# T4Project
-Table of Contents
-* [Introduction](#introduction)
-* [Real-World Problem](#real-world-problem)
-* [Sefaria Collaboration](#sefaria-collaboration)
-* [Multi-Classification Model](#multi-classification-model)
-* [Data Sources](#data-sources)
-* [DVC Usage](#dvc-usage)
-* [EDA and Cleaning](#eda-and-cleaning)
-* [Binary Classification Models](#binary-classification-models)
-* [Transformer Models](#transformer-models)
-* [Model Productionization](#model-productionization)
-* [Conclusion](#conclusion)
+# About the Project
+To see an overview of our project, see our GitHub Pages site [here]().
 
-**Introduction**
+# Repo Structure
+The repository is split into 4 directories:
 
-<a name="introduction"></a>
-Welcome to our project! In this README, you'll find detailed information about the motivation, data sources, cleaning strategies, and various classification models we used to build our multi-classification model.
+- [Data](Data) | The constant data, like the raw and cleaned training data we were given by sefaria, as well as the cleaning script we used
+- [Demo](Demo) | Python scripts and notebooks to run to utilize the models we built for inference
+- [Models](Models) | Where we have our saved models, as well as scripts to recreate these models
+- [Results](Results) | Summaries (as classification reports) of our findings
 
-**Real-World Problem**
+# Usage
 
-<a name="real-world-problem"></a>
-(Describe the real-world problem you're trying to solve with this project.)
+## Data
+We were given 
 
-**Sefaria Collaboration**
+## Demos
+There are 3 demos available:
+1. An inference demo of our logistic regression models, found [here](Demo/logistic_regression_inference_demo.ipynb)
+2. An inference demo of our transformer models, found [here](Demo/transformer_inference_demo.ipynb)
+3. A more robust demo website of all models to play around with, found [here](Demo/Demo_website.ipynb)
 
-<a name="sefaria-collaboration"></a>
-Our project has collaborated with Sefaria, a platform for Jewish texts, to utilize their resources and data for building our classification model.
+Instructions for each demo can be found within the notebooks themselves. For the website demo you must be able to run a flask app locally, for details see [here](https://flask.palletsprojects.com/en/2.2.x/quickstart/)
 
-**Multi-Classification Model**
-
-<a name="multi-classification-model"></a>
-We've built binary classifiers for various categories and combined them into a multi-classification model to classify texts based on multiple aspects.
-
-**Data Sources**
-
-<a name="data-sources"></a>
-
-Labeled data (for training classifiers)
-Aspaklaria data
-Sefaria matching texts
-Sefaria source sheets
-Unlabeled data (for training word embeddings)
-Word embeddings files
-
-**DVC Usage**
-
-<a name="dvc-usage"></a>
-We used Data Version Control (DVC) to manage and version our datasets and models throughout the project.
-
-**EDA and Cleaning**
-
-<a name="eda-and-cleaning"></a>
-
-**Dataset basics**
-
-(Provide a brief overview of the dataset.)
-
-Appearance of English in the dataset
-Punctuation
-Roshei teivot (abbreviations)
-Cleaning strategies
-Variations of roshei teivot cleaning
-Variations of English cleaning
-
-**Binary Classification Models**
-
-<a name="binary-classification-models"></a>
-We experimented with various binary classification models, including:
-
-Logistic Regression
-Word2Vec
-Naive Bayes
-Random Forest
-Decision Trees
-Expectation Maximization (EM)
-
-**Transformer Models**
-
-<a name="transformer-models"></a>
-We explored the use of Hebrew transformer models due to the limitations of English-based models. The following models were investigated:
-
-AlephBERT
-HeBERT
-BEREL
-
-**Model Productionization**
-
-<a name="model-productionization"></a>
-
-Demo website
-(Provide a link to the demo website showcasing the multi-classification model.)
-
-Multiple heads on a single transformer model
-(Explain the implementation of multiple heads on a single transformer model.)
-
-**Conclusion**
-
-<a name="conclusion"></a>
-(Summarize the project's main findings, contributions, and future directions.)

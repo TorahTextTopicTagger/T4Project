@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+
+<html>
+
+<meta charset="utf-8">
+
+<head>
+	<title>Torah Topic Text Tagger</title>
+</head>
+
+<body>
+	<h1>Torah Topic Text Tagger</h1>
+	<form action="/" method="POST">
+		<label for="sentence">Enter a Text:</label><br>
+		<input class="box " type="text" id="sentence" name="sentence"><br>
+		<p>Probability Score:</p>
+		<input type="range" min="0" max="100" value="50" class="slider" id="slider">
+		<input type="number" min="0" max="100" value="50" class="number-box" id="number-box" name="number"> <br>
+
+		<script>
+			var slider = document.getElementById("slider");
+			var numberBox = document.getElementById("number-box");
+
+			slider.oninput = function () {
+				numberBox.value = this.value;
+			};
+			// update number box value when slider changes
+			numberBox.oninput = function () {
+				// if number box is empty, set default value
+				if (!this.value.trim()) {
+					this.value = slider.value;
+				}
+				// limit value to range between 1 and 100
+				if (this.value < 0) {
+					this.value = 0;
+				}
+				else if (this.value > 100) {
+					this.value = 100;
+				}
+				slider.value = this.value;
+			};
+
+		</script>
+
+		<input class="button" type="submit" value="Submit">
+	</form>
+	{% for s in sentence %}
+		<h2>{{s}}</h2>
+	{% endfor %}
+
+	{% if scores %}
+	<table id="data" class="table">
+		<thead>
+			<tr>
+				<th>Topic</th>
+				<th>Model</th>
+				<th>Probability 0</th>
+				<th>Probability 1</th>
+				<th>Result</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for score in scores %}
+			<tr>
+				<td>{{ score.topic }}</td>
+				<td>{{ score.model }}</td>
+				<td>{{ score.prob_0 }}</td>
+				<td>{{ score.prob_1 }}</td>
+				<td>{{ score.result }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	{% endif %}
+
+</body>
+
+</html>

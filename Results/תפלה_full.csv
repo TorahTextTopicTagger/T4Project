@@ -1,0 +1,10 @@
+תפלה model,accuracy,precision_0,recall_0,f1-score_0,precision_1,recall_1,f1-score_1
+alephBERT,0.89,0.91,0.88,0.89,0.87,0.9,0.88
+BEREL,0.93,0.94,0.94,0.94,0.93,0.93,0.93
+heBERT,0.91,0.91,0.91,0.91,0.91,0.91,0.91
+Multinomial NB,0.84,0.79,0.88,0.84,0.89,0.8,0.84
+Logistic Regression,0.84,0.92,0.81,0.86,0.77,0.9,0.83
+K Neighbors Classifier,0.63,0.95,0.59,0.73,0.28,0.85,0.42
+Random Forest Classifier,0.88,0.95,0.83,0.89,0.8,0.94,0.86
+Decision Tree Classifier,0.85,0.9,0.83,0.86,0.81,0.88,0.84
+XGB Classifier,0.84,0.92,0.79,0.85,0.74,0.9,0.81
