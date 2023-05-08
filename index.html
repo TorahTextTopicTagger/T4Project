@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+            background-color: #2c3e50;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
             background-size: 56.57px 56.57px;
         }
         h1, h2, h3 {
@@ -27,6 +27,12 @@
             padding: 30px;
             background-color: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.12);
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            max-width: 200px;
         }
         .profile {
             display: flex;
@@ -47,6 +53,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="logo.png" alt="Project Logo" class="logo">
         <h1>Project Title</h1>
         <p>Project description...</p>
         <h2>Resources</h2>
@@ -66,7 +73,7 @@
                 <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
                 <p><a href="https://www.linkedin.com/in/linkedin-profile">LinkedIn</a></p>
             </div>
-        </div
+        </div>
         <h2>Supervisors</h2>
         <div class="profile">
             <!-- Repeat the following 'profile-card' for each supervisor -->
