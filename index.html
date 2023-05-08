@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,22 @@
             background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
             background-size: 56.57px 56.57px;
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: #333;
         }
+
         a {
             color: #0066cc;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -28,29 +35,34 @@
             background-color: white;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.12);
         }
+
         .logo {
             display: block;
             margin: 0 auto;
             margin-bottom: 20px;
             max-width: 200px;
         }
+
         .profile {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             margin-bottom: 30px;
         }
+
         .profile-card {
-            flex: 0 0 calc(50% - 20px);
             margin: 10px;
             padding: 20px;
             background-color: #f8f8f8;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.12);
         }
+
         .profile-card h3 {
             margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <img src="logo.png" alt="Project Logo" class="logo">
@@ -58,8 +70,10 @@
         <p>Project description...</p>
         <h2>Resources</h2>
         <ul>
-            <li><a href="https://github.com/username/repository-name/blob/main/presentation.pptx">PowerPoint Presentation</a></li>
-            <li><a href="https://github.com/username/repository-name/blob/main/documentation.pdf">PDF Documentation</a></li>
+            <li><a href="https://github.com/username/repository-name/blob/main/presentation.pptx">PowerPoint
+                    Presentation</a></li>
+            <li><a href="https://github.com/username/repository-name/blob/main/documentation.pdf">PDF Documentation</a>
+            </li>
             <li><a href="https://github.com/username/repository-name">Source Code and Tests</a></li>
             <li><a href="getting-started-users.html">Getting Started for Users</a></li>
             <li><a href="getting-started-developers.html">Getting Started for Developers</a></li>
@@ -67,50 +81,97 @@
         <h2>Team Members</h2>
         <div class="profile">
             <!-- Repeat the following 'profile-card' for each team member -->
-            <div class="profile-card">
-                <h3>Nissim Cantor</h3>
-                <p>Nissim Cantor is a fourth-year computer science student at Yeshiva University with a focus on artificial intelligence. He has experience as a Technology Summer Analyst at Nomura Securities, where he developed Java code for the Alpha-Strat executions trading platform team. In addition to his work experience, Nissim has also been a teaching assistant for various computer science courses and volunteered on campus in different capacities. He currently resides in New York City with his wife and fancy kitchen lights.</p>
-                <p>Contact: <a href="ndcantor@mail.yu.edu">ndcantor@mail.yu.edu</a></p>
-                <p><a href="https://www.linkedin.com/in/nissim-cantor/">LinkedIn</a></p>
-            </div>
-            <div class="profile-card">
-                <h3>Yair Caplan</h3>
-                <p>Yair Caplan is a highly skilled software engineer who is currently pursuing a Bachelor of Science degree in Computer Science at Yeshiva University. He has gained practical experience in software development, data analysis, and project management through his various internships, including his time as a Software Development Engineering (SDE) intern at Amazon. During this internship, he worked with a team to solve complex challenges and gain hands-on experience in software development. Additionally, he has worked as a research intern at Bar-Ilan University, where he collaborated with a team to extend an existing gene network analysis tool and implemented tools for conversion between graphical representations of gene networks and formal verification model checker.
-                Yair's time as a teaching assistant and peer tutor at Yeshiva University also exemplifies his dedication to the field of computer science. He has guided and mentored students to develop their skills and understanding of complex topics, which further highlights his passion for teaching and helping others. With his impressive track record of success and commitment to continuous learning and growth, Yair is well-positioned to make significant contributions in any tech company. He currently resides in Washington Heights, NY with his wife and two laptops.</p>
-                <p>Contact: <a href="mailto:jmcaplan@mail.yu.edu">jmcaplan@mail.yu.edu</a></p>
-                <p><a href="https://www.linkedin.com/in/yair-jason-caplan-457328196/">LinkedIn</a></p>
-                    
-            </div>
-            <div class="profile-card">
-                <h3>David Lifschitz</h3>
-                <p>David Lifschitz is an upcoming software engineer at JPMorgan Chase & Co. He hails from Englewood, NJ, and is pursuing a Bachelor's of Science in Computer Science concentrating in Data Science at Yeshiva University. David has had previous internship experiences at Pypestream and MyPhoto.
+            <div class="profile-card"></div class>
+            <h3>Nissim Cantor</h3>
+            <p>Nissim Cantor is a fourth-year computer science student at Yeshiva University with a focus on artificial
+                intelligence. He has experience as a Technology Summer Analyst at Nomura Securities, where he developed
+                Java code for the Alpha-Strat executions trading platform team. In addition to his work experience,
+                Nissim has also been a teaching assistant for various computer science courses and volunteered on campus
+                in different capacities. He currently resides in New York City with his wife and fancy kitchen lights.
+            </p>
+            <p>Contact: <a href="ndcantor@mail.yu.edu">ndcantor@mail.yu.edu</a></p>
+            <p><a href="https://www.linkedin.com/in/nissim-cantor/">LinkedIn</a></p>
+        </div>
+        <div class="profile-card">
+            <h3>Yair Caplan</h3>
+            <p>Yair Caplan is a highly skilled software engineer who is currently pursuing a Bachelor of Science degree
+                in Computer Science at Yeshiva University. He has gained practical experience in software development,
+                data analysis, and project management through his various internships, including his time as a Software
+                Development Engineering (SDE) intern at Amazon. During this internship, he worked with a team to solve
+                complex challenges and gain hands-on experience in software development. Additionally, he has worked as
+                a research intern at Bar-Ilan University, where he collaborated with a team to extend an existing gene
+                network analysis tool and implemented tools for conversion between graphical representations of gene
+                networks and formal verification model checker.
+                Yair's time as a teaching assistant and peer tutor at Yeshiva University also exemplifies his dedication
+                to the field of computer science. He has guided and mentored students to develop their skills and
+                understanding of complex topics, which further highlights his passion for teaching and helping others.
+                With his impressive track record of success and commitment to continuous learning and growth, Yair is
+                well-positioned to make significant contributions in any tech company. He currently resides in
+                Washington Heights, NY with his wife and two laptops.</p>
+            <p>Contact: <a href="mailto:jmcaplan@mail.yu.edu">jmcaplan@mail.yu.edu</a></p>
+            <p><a href="https://www.linkedin.com/in/yair-jason-caplan-457328196/">LinkedIn</a></p>
 
-                    Beyond his academic and professional experiences, David is involved in several extracurricular activities. He is the President of the Yeshiva University Machine Learning and Artificial Intelligence Club, where he shares his knowledge and passion for AI with fellow students. David is also the Co-Founder of the Yeshiva University Chapter of the Alexander Hamilton Society, where he works to foster intellectual discussion on campus. In addition to these pursuits, he has volunteered with Friendship Circle, Our Place NY, and Kol HaNearim, giving back to his community.
-                    
-                    In his free time, David enjoys talking about his interests in AI, optimization, computer science, and behavioral economics. He is also a huge MCU Superfan and enjoys collecting Jewish books. David currently resides in Washington Heights, NY with his wife and two Armitron watches.</p>
-                <p>Contact: <a href="mailto:dlifschi@mail.yu.edu">dlifschi@mail.yu.edu</a></p>
-                <p><a href="https://www.linkedin.com/in/david-lifschitz">LinkedIn</a></p>
-            </div>
-            <div class="profile-card">
-                <h3>Jacob Silbiger</h3>
-                <p>Jacob Silbiger is an accomplished computer science student with an emphasis on Artificial Intelligence at Yeshiva University, where he is pursuing a degree in Computer Science while minoring in Mathematics and Political Science. He has gained practical experience in various computer science areas, including cloud computing, data structures, and deep neural networks. Jacob has also completed internships and participated in several projects, enabling him to apply his academic knowledge to real-world challenges.
-                    In addition to his academic and professional pursuits, Jacob is deeply committed to volunteering and helping others. He has worked as a counselor at Camp Kaylie, creating an inclusive environment for children with special needs, and he has volunteered for Keren Or, Inc., where he logged donations for a non-profit dedicated to the education and care of visually impaired children in Israel. Furthermore, he has completed a course in effective communication skills through Dale Carnegie Training. Albeit  originally hailing from West Hempstead, NY Jacob currently resides in Washington Heights NY with his friends and his beloved Bluetooth keyboard.</p>
-                <p>Contact: <a href="mailto:jsilbige@mail.yu.edu">jsilbige@mail.yu.edu</a></p>
-                <p><a href="https://www.linkedin.com/in/jacob-silbiger-0521081b5/">LinkedIn</a></p>
-            </div>
         </div>
-        <h2>Supervisors</h2>
-        <div class="profile">
-            <!-- Repeat the following 'profile-card' for each supervisor -->
-            <div class="profile-card">
-                <h3>Name</h3>
-                <p>Bio...</p>
-                <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
-                <p><a href="https://www.linkedin.com/in/linkedin-profile">LinkedIn</a></p>
-            </div>
+        <div class="profile-card">
+            <h3>David Lifschitz</h3>
+            <p>David Lifschitz is an upcoming software engineer at JPMorgan Chase & Co. He hails from Englewood, NJ, and
+                is pursuing a Bachelor's of Science in Computer Science concentrating in Data Science at Yeshiva
+                University. David has had previous internship experiences at Pypestream and MyPhoto.
+
+                Beyond his academic and professional experiences, David is involved in several extracurricular
+                activities. He is the President of the Yeshiva University Machine Learning and Artificial Intelligence
+                Club, where he shares his knowledge and passion for AI with fellow students. David is also the
+                Co-Founder of the Yeshiva University Chapter of the Alexander Hamilton Society, where he works to foster
+                intellectual discussion on campus. In addition to these pursuits, he has volunteered with Friendship
+                Circle, Our Place NY, and Kol HaNearim, giving back to his community.
+
+                In his free time, David enjoys talking about his interests in AI, optimization, computer science, and
+                behavioral economics. He is also a huge MCU Superfan and enjoys collecting Jewish books. David currently
+                resides in Washington Heights, NY with his wife and two Armitron watches.</p>
+            <p>Contact: <a href="mailto:dlifschi@mail.yu.edu">dlifschi@mail.yu.edu</a></p>
+
+            <a href="mailto:dlifschi@mail.yu.edu">dlifschi@mail.yu.edu</a></p>
+            <p><a href="https://www.linkedin.com/in/david-lifschitz">LinkedIn</a></p>
         </div>
-        <h2>Project Presentation Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="profile-card">
+            <h3>Jacob Silbiger</h3>
+            <p>Jacob Silbiger is an accomplished computer science student with an emphasis on Artificial Intelligence at
+                Yeshiva University, where he is pursuing a degree in Computer Science while minoring in Mathematics and
+                Political Science. He has gained practical experience in various computer science areas, including cloud
+                computing, data structures, and deep neural networks. Jacob has also completed internships and
+                participated in several projects, enabling him to apply his academic knowledge to real-world challenges.
+                In addition to his academic and professional pursuits, Jacob is deeply committed to volunteering and
+                helping others. He has worked as a counselor at Camp Kaylie, creating an inclusive environment for
+                children with special needs, and he has volunteered for Keren Or, Inc., where he logged donations for a
+                non-profit dedicated to the education and care of visually impaired children in Israel. Furthermore, he
+                has completed a course in effective communication skills through Dale Carnegie Training. Albeit
+                originally hailing from West Hempstead, NY Jacob currently resides in Washington Heights NY with his
+                friends and his beloved Bluetooth keyboard.</p>
+            <p>Contact: <a href="mailto:jsilbige@mail.yu.edu">jsilbige@mail.yu.edu</a></p>
+            <p><a href="https://www.linkedin.com/in/jacob-silbiger-0521081b5/">LinkedIn</a></p>
+        </div>
     </div>
+    <h2>Supervisors</h2>
+    <div class="profile" style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px;">
+        <!-- Repeat the following 'profile-card' for each supervisor -->
+        <div class="profile-card">
+            <h3>Name</h3>
+            <p>Bio...</p>
+            <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p><a href="https://www.linkedin.com/in/linkedin-profile">LinkedIn</a></p>
+        </div>
+        <div class="profile-card">
+            <h3>Name</h3>
+            <p>Bio...</p>
+            <p>Contact: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p><a href="https://www.linkedin.com/in/linkedin-profile">LinkedIn</a></p>
+        </div>
+    </div>
+    <h2>Project Presentation Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
 </body>
+
 </html>
