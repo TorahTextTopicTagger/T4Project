@@ -1,3 +1,26 @@
+# Contents
+- [About the Project](#about-the-project)
+- [Repo Structure](#repo-structure)
+- [Getting Started Guide](#getting-started-guide)
+  * [Intro](#intro)
+  * [Data](#data)
+    + [Raw Data](#raw-data)
+      - [Labeled Data](#labeled-data)
+      - [Unlabeled Data](#unlabeled-data)
+    + [Cleaned Data & Cleaning Mods](#cleaned-data---cleaning-mods)
+  * [Demos](#demos)
+  * [Models](#models)
+    + [Our Saved Models](#our-saved-models)
+    + [Model Generation Scripts](#model-generation-scripts)
+  * [Results](#results)
+  * [Utils](#utils)
+    + [Sefaria Slug-ID Mapping](#sefaria-slug-id-mapping)
+- [Room for Further Development](#room-for-further-development)
+  * [Improve Existing Models](#improve-existing-models)
+  * [Streamlining a Complete Production Pipeline](#streamlining-a-complete-production-pipeline)
+  * [Data Acquisition](#data-acquisition)
+  * [Possible New Architectures](#possible-new-architectures)
+
 # About the Project
 To see an overview of our project, see our GitHub Pages site [here](https://torahtexttopictagger.github.io/T4Project/).
 
