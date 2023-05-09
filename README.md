@@ -1,7 +1,7 @@
-# Contents
-- [About the Project](#about-the-project)
-- [Repo Structure](#repo-structure)
-- [Getting Started Guide](#getting-started-guide)
+# :memo: Contents
+- :information_source: [About the Project](#about-the-project)
+- :bricks: [Repo Structure](#repo-structure)
+- :rocket: [Getting Started Guide](#getting-started-guide)
   * [Intro](#intro)
   * [Data](#data)
     + [Raw Data](#raw-data)
@@ -15,7 +15,7 @@
   * [Results](#results)
   * [Utils](#utils)
     + [Sefaria Slug-ID Mapping](#sefaria-slug-id-mapping)
-- [Room for Further Development](#room-for-further-development)
+- :bulb: [Ideas for Further Development](#room-for-further-development)
   * [Improve Existing Models](#improve-existing-models)
   * [Streamlining a Complete Production Pipeline](#streamlining-a-complete-production-pipeline)
   * [Data Acquisition](#data-acquisition)
