@@ -12,14 +12,13 @@ def get_transformer_model_path(topic, base_model_name):
 def get_logistic_regression_model_path(topic):
   return f'../Models/Saved_Models/LogisticRegression/{topic}/'
 
-BEREL_BASE_PATH = '../Models/Saved_Models/Transformers/BEREL_base'
+BEREL_BASE_PATH = 't4-project/BEREL-base'
 
 # %%
-from flask import Flask, render_template, request, url_for, flash, redirect, jsonify
+from flask import Flask, render_template, request
 import pickle
-import numpy as np
 import pandas as pd
-import os, re
+import re
 
 # %%
 
@@ -29,7 +28,7 @@ from transformers import AutoModelForSequenceClassification, TextClassificationP
 from transformers import BertTokenizerFast
 
 # %%
-from transformers import BertTokenizer, BertForMaskedLM
+from transformers import BertTokenizer
 from rabtokenizer import RabbinicTokenizer
 from transformers import AutoTokenizer
 
@@ -37,7 +36,7 @@ from transformers import AutoTokenizer
 transformer_topics = ['ישראל', 'למוד', 'תורה', 'תפלה', 'תשובה']
 
 alephBERT_tokenizer = BertTokenizerFast.from_pretrained('onlplab/alephbert-base')
-berel_tokenizer = RabbinicTokenizer(BertTokenizer.from_pretrained(os.path.join(BEREL_BASE_PATH, 'vocab.txt'), model_max_length=512))
+berel_tokenizer = RabbinicTokenizer(BertTokenizer.from_pretrained(BEREL_BASE_PATH, model_max_length=512))
 heBERT_tokenizer = AutoTokenizer.from_pretrained("avichr/heBERT", model_max_length=512)
 
 alephBERT_model_pipes = {}
