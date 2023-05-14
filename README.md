@@ -21,11 +21,7 @@ The repository is split into 4 directories:
 ## Pre-reqs
 1. Clone this repo!
 2. Make sure you have [python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installation/) installed.
-3. Make sure you have all the packages installed and up-to-date by running 
-
-```pip install -r requirements.txt```
-
-from the root direcrtory of this repo.
+3. Make sure you have all the packages installed and up-to-date by running `pip install -r requirements.txt` from the root direcrtory of this repo.
 
 ## Intro
 The best way to get a feel for the models is to clone the repo and run the [demos](#demos) below. 
@@ -58,7 +54,11 @@ There are 3 demos available:
 2. An inference demo of our transformer models, found [here](Demo/transformer_inference_demo.ipynb)
 3. A more robust demo website of all models to play around with, found [here](Demo/Demo_Website.py)
 
-Instructions for each demo can be found within the notebooks themselves. For the website demo you must be able to run a flask app locally, for details see [here](https://flask.palletsprojects.com/en/2.2.x/quickstart/)
+All demos must be run from within the [Demo](Demo) directory.
+
+Instructions for the first 2 demos can be found within the notebooks themselves. 
+
+For the website demo, you must be able to run a flask app locally, for details see [here](https://flask.palletsprojects.com/en/2.2.x/quickstart/). Note that the first time it is run it will take a few minutes.
 
 ## Models
 
