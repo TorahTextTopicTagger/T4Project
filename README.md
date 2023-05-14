@@ -66,7 +66,7 @@ We include the training scripts used for training both LogisticRegression and Tr
 ## Results
 Here we report the results of our models, including basic sklearn models, XGBoost, and fine-tuned transformers. The results are organized per-topic, for easy model-to-model comparison. The results are in the form of [sklearn classification reports](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html), and include columns for:
 - overall accuracy
-- precision/recall for the labels 0 and 1, i.e. not a member of the topic and member of the topic respectively.
+- precision/recall for the labels 0 and 1, i.e. not a member of the topic and member of the topic, respectively.
 
 ## Utils
 ### Sefaria Slug-ID Mapping
@@ -83,13 +83,21 @@ However, one great improvement would be in the transformer models' storage and i
 To be able to seamlessly incorporate new labeled data, retrain existing models, and use those models for inference, a complete automated pipeline would be desireable, preferably with a cloud-based architecture.
 
 ## Data Acquisition
+A distinct challenge we encountered in this project was acquisition of quality data. The challenge was two-fold:
+1. Labeling was not done text-by-text to attach topics to a given text, in a text-centric fashion. Rather, the labeling was done for the problem-space of a topical encylcolpedia, and therefore the labeling was topic-centric. This meant that some pieces of data were only labeled as part of a topic because they contextually added to the overall encyclopedic understanding of the topic, not because they semantically on their own related directly to the topic.
+2. Data was not "negatively labeled" in a meaningful way - i.e., a piece of text was not labeled as NOT belonging to a particular topic, only that it WAS belonging to a particular topic. This meant that negative labels had to be artificially created.
 
+Our approaches to these problems were as follows:
+1. We didn't address this - it was the only data we had available.
+2. We randomly samples non-positive labeled text as our negatively labeled text. This obviously leaves room for inaccurate labeling (e.g., in a case where a text that was not positively labeled as topic X, is in fact a member of topic X, and simply wasn't labeled as such because the positive labeling was inexhaustive by nature).
+
+For a future iteration of this project, a more robust data source which does not have the 2 pitfalls listed above, would be desirable (but possibly costly, as this type of labeling requires expertise in terms of knowledge of Hebrew, Torah topics, etc.).
 
 ## Possible New Architectures
 Our current approach to multi-label classification is essentially a unified interface to multiple binary classifiers. However, this architecture is suboptimal for 2 reasons:
 1. This creates a scattered affect, where models are not unified for the given task
-2. It is probable that patters inhere in the data that could help with accuracy of topic A given the classification for topic B, and only a model that is predicting both can account for that
+2. It is probable that patterns inhere in the data that could help with accuracy of topic A given the classification for topic B, and only a model that is predicting both can account for that
 
-Therefore, a true multi-label classifier is desireable. However, this would require much data-engineering to create useful training data, i.e. texts with N labels each for an N-topic problem space.
+Therefore, a true multi-label classifier is desireable. However, this would require much data-engineering to create useful training data, i.e. texts with N labels each for an N-topic problem space, or alternatively a different data source, as described [above](#data-acquisition).
 
 
