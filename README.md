@@ -56,7 +56,7 @@ You can also check out the [raw data](#raw-data) we used, the [cleaning code](#c
 There are 3 demos available:
 1. An inference demo of our logistic regression models, found [here](Demo/logistic_regression_inference_demo.ipynb)
 2. An inference demo of our transformer models, found [here](Demo/transformer_inference_demo.ipynb)
-3. A more robust demo website of all models to play around with, found [here](Demo/Demo_website.ipynb)
+3. A more robust demo website of all models to play around with, found [here](Demo/Demo_website.py)
 
 Instructions for each demo can be found within the notebooks themselves. For the website demo you must be able to run a flask app locally, for details see [here](https://flask.palletsprojects.com/en/2.2.x/quickstart/)
 
