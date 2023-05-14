@@ -82,7 +82,7 @@ Here we report the results of our models, including basic sklearn models, XGBoos
 Since the labeled training data was from [Aspaklaria](https://www.aspaklaria.info/), and the target of the project is ultimately for use in the [Sefaria Topics](https://www.sefaria.org/topics) space, we provide a mapping from the Aspaklaria topics used in the code to the associated Sefaria slug-ID's. The `python` function for this is [here](Utils/topic_to_slug/convert_topics_to_sefaria_ids.py), and can be run interactively from a CLI [here](Utils/topic_to_slug/convert_topics_to_sefaria_ids_interactive.py).
 
 # Guide for Further Development
-
+After forking our repository, one can try out one or more of the following techniques:
 ## Improve Existing Models
 There is likely not much room to improve the accuracy of the existing models through hyperparameter tuning, as our attempts to do this seemed futile.
 
