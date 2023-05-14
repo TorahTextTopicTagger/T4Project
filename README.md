@@ -2,8 +2,7 @@
 - [About the Project](#about-the-project) :information_source:
 - [Repo Structure](#repo-structure) :bricks: 
 - [Getting Started Guide](#getting-started-guide) :rocket:
-
-- [Ideas for Further Development](#room-for-further-development) :bulb:
+- [Ideas for Further Development](#ideas-for-further-development) :bulb:
 
 # About the Project
 To see an overview of our project, see our GitHub Pages site [here](https://torahtexttopictagger.github.io/T4Project/).
@@ -73,7 +72,7 @@ Here we report the results of our models, including basic sklearn models, XGBoos
 ### Sefaria Slug-ID Mapping
 Since the labeled training data was from [Aspaklaria](https://www.aspaklaria.info/), and the target of the project is ultimately for use in the [Sefaria Topics](https://www.sefaria.org/topics) space, we provide a mapping from the Aspaklaria topics used in the code to the associated Sefaria slug-ID's. The `python` function for this is [here](Utils/topic_to_slug/convert_topics_to_sefaria_ids.py), and can be run interactively from a CLI [here](Utils/topic_to_slug/convert_topics_to_sefaria_ids_interactive.py).
 
-# Room for Further Development
+# Ideas for Further Development
 
 ## Improve Existing Models
 There is likely not much room to improve the accuracy of the existing models through hyperparameter tuning, as our attempts to do this seemed futile.
